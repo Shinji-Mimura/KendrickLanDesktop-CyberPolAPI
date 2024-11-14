@@ -1,6 +1,6 @@
 # KendrickLanDesktop-CyberPolAPI
 
-Este repositório contém o código-fonte e os write-ups das trilhas criadas para o evento de Capture The Flag (CTF) realizado no Tempest Academy Conference 2024. O objetivo é fornecer aos participantes desafios práticos em segurança da informação, abrangendo diversas áreas e técnicas.
+Este repositório contém o código-fonte e os write-ups das trilhas criadas para o evento de Capture The Flag (CTF) realizado no Tempest Academy Conference 2024.
 
 ## Estrutura do Repositório
 
