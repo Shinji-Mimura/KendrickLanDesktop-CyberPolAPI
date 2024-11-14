@@ -1,0 +1,24 @@
+FROM node:18-alpine
+
+RUN mkdir -p /home/node/ && chown -R node:node /home/node/
+
+COPY --chown=node:node gciu-api/ /home/node/gciu-api/
+
+COPY --chown=node:node gciu-evidences/ /home/node/gciu-evidences/
+
+USER node
+
+# Instalando Dependencias - React
+WORKDIR /home/node/gciu-evidences/
+RUN npm install && \
+        npm run build && \
+        cp -r /home/node/gciu-evidences/build /home/node/gciu-api/react-build
+
+# Instalando Dependencias - API
+WORKDIR /home/node/gciu-api
+RUN npm install 
+
+EXPOSE 8080
+
+CMD [ "node", "index.js" ]
+# sudo docker build -t cwg-evidences-challenges .

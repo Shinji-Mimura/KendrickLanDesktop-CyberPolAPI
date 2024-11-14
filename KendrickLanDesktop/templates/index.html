@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consulta de Evidências Criminais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window" id="window">
+        <div class="title-bar" id="title-bar">
+            <div class="title-bar-text">Sistema de Consulta de Evidências Criminais</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimizar" id="minimize-btn"></button>
+                <button aria-label="Maximizar" id="maximize-btn"></button>
+                <button aria-label="Fechar" id="close-btn"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="search-bar">
+                <label for="search">Pesquisar:</label>
+                <input type="text" id="search" name="search">
+                <button id="search-btn">Buscar</button>
+            </div>
+            <div class="results">
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th>Arquivo</th>
+                            <th>Descrição</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Resultados da busca serão inseridos aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

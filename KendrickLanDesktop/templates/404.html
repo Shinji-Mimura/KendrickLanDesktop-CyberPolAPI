@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="error-body">
+    <div class="error-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Erro 404 - Página Não Encontrada</div>
+            <div class="title-bar-controls">
+                <button aria-label="Fechar" id="close-btn"></button>
+            </div>
+        </div>
+        <div class="error-body">
+            <div class="error-icon">
+                <img src="https://img.icons8.com/windows/96/000000/error.png" alt="Erro 404">
+            </div>
+            <div class="error-message">
+                <h2>Oops! Algo deu errado...</h2>
+                <p>A página que você está procurando não foi encontrada.</p>
+                <p>Você pode ter digitado o endereço errado ou a página pode ter sido removida.</p>
+                <button class="menu-button" onclick="location.href='index.html'">
+                    <img src="https://img.icons8.com/windows/32/000000/home.png" alt="Página Principal">
+                    Voltar para a Página Principal
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

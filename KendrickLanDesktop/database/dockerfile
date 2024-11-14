@@ -1,0 +1,10 @@
+FROM mariadb:latest
+
+ENV MYSQL_DATABASE="evidences_archive_db"
+ENV MYSQL_ROOT_PASSWORD="gain brim corn sacs such tang"
+ENV MYSQL_USER="mysql"
+ENV MYSQL_PASSWORD="mysql"
+
+COPY ./database.sql /docker-entrypoint-initdb.d/database.sql 
+
+# 

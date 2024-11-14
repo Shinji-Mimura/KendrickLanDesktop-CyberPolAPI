@@ -1,0 +1,21 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  db:
+    build: database/
+    restart: always
+    ports:
+      - 127.0.0.1:3306:3306
+
+  api:
+    build: src/
+    restart: always
+    ports:
+      - 0.0.0.0:80:8080
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: evidences_archive_db
